@@ -6,8 +6,16 @@
     <title>Treino de Partituras Simplificadas para Cavaquinho</title>
     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/partituras-global.css') }}"> -->
     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/partituras-index.css') }}"> -->
-     <!-- base path: -->
-    <base href="/Portfolio_Proj_007-Treino_Partituras_Simplificadas/">
+    <!-- REVER ESSA PARTE: -->
+    <script>
+        if (window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost") {
+          document.write('<base href="/">');
+        } else {
+          document.write('<base href="/Portfolio_Proj_007-Treino_Partituras_Simplificadas/">');
+        }
+    </script>
+    <!-- base path: Impede que rode localmente -->
+    <!-- <base href="/Portfolio_Proj_007-Treino_Partituras_Simplificadas/"> -->
     <link rel="stylesheet" href="./static/css/partituras-index.css">
     <link rel="stylesheet" href="./static/css/partituras-global.css">
     <link rel="stylesheet" href="./static/css/partituras-treino.css">
