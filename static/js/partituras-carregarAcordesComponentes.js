@@ -5,7 +5,7 @@
 async function carregarAcorde(container, nomeAcorde) {
     try {
         // Carrega o arquivo HTML do acorde
-        const response = await fetch(`../acordesComponentes/${nomeAcorde}.html`);
+        const response = await fetch(`./acordesComponentes/${nomeAcorde}.html`);
         if (!response.ok) {
             throw new Error(`Erro ao carregar o acorde: ${nomeAcorde}`);
         }
