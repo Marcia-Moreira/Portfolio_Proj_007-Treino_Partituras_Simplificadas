@@ -29,3 +29,14 @@ body {
     padding: 10px;
 }
 
+/* Para destacar o Card ao Centro de Tela: */
+.partituras-carrossel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: rgba(255, 0, 0, 0.5);
+    transform: translateX(-50%);
+  }
