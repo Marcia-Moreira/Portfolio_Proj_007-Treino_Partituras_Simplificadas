@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino - Música 2</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/partituras-global.css') }}"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/partituras-treino.css') }}"> -->
+    <link rel="stylesheet" href="/static/css/partituras-index.css">
+    <link rel="stylesheet" href="/static/css/partituras-global.css">
+    <link rel="stylesheet" href="/static/css/partituras-treino.css">
+    <link rel="stylesheet" href="/static/css/partituras-responsividadeTela.css">
+    <link rel="stylesheet" href="/static/css/partituras-cardImage.css">
+    <link rel="stylesheet" href="/static/css/partituras-acordesComponentes.css">
+</head>
+<body>
+    <div class="partituras-container">
+<!-- =================================================== -->
+        <div class="partituras-titulo">
+            <h1> Música 2 </h1>
+            <h3> Cantor X </h3>
+        </div>
+<!-- =================================================== -->
+        <div class="partituras-controles">
+            <button id="partituras-play"> ▶️ <span>Play</span> </button>
+            <button id="partituras-pause"> ⏸️ <span>Pause</span> </button>
+            <button id="partituras-velocidade-devagar"> 🐢🐢🐢 <span>Lento</span> </button>
+            <button id="partituras-velocidade-medio"> 🐢🐢 <span>Devagar</span> </button>
+            <button id="partituras-velocidade-rapido"> 🐇 <span>Rápido</span> </button>
+            <!-- <button id="partituras-som">🔊 🔇 <span>Audio</span> </button> -->
+            <button id="partituras-som" onclick="alternarSom()">🔊 <span>Som</span></button>
+            <button onclick="fecharJanela()"> ❌ <span>Fechar</span> </button>
+            <button onclick="maximizar()"> ⛶ <span>Maximizar</span> </button>
+        </div>
+<!-- =================================================== -->
+        <div class="partituras-letras-acordes">
+            <!-- Letra da Música a ser Ensaiada: -->
+            <!-- Acordes a serem usados na Música: -->
+        </div>
+<!-- =================================================== -->
+        <!-- INÍCIO CONTAINER MUSICAL -->
+        <div class="partituras-carrossel">
+            <!-- Trecho 1 -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho 2 -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMenor"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho X -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho X -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho X -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho X -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho X -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trecho X -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doSetima"></div>
+                    <div class="card-letraMusica">
+                        <p>Trecho da música onde o</p>
+                        <p> acorde C7 é tocado...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais trechos conforme necessário -->
+        </div>
+        <!-- FIM CONTAINER MUSICAL -->
+<!-- =================================================== -->
+        <!-- Para o Play: Carrossel -->
+        <div class="partituras-carrossel">
+            <div class="partituras-card">
+                
+            </div>
+            <!-- Adicionar mais cards -->
+        </div>
+
+    </div>
+<!-- =================================================== -->
+    <!-- <script src="{{ url_for('static', filename='js/partituras-treino.js') }}"></script> -->
+    <!-- <script src="../static/js/partituras-treinoCarrossel.js"></script> -->
+    <script src="/static/js/partituras-index.js"></script>
+    <script src="/static/js/partituras-abrirJanelaMenor.js"></script>
+    <script src="/static/js/partituras-fecharJanela.js"></script>
+    <script src="/static/js/partituras-maximizarJanela.js"></script>
+    <script src="/static/js/partituras-alternarSom.js"></script>
+    <script src="/static/js/partituras-carregarAcordesComponentes.js"></script>
+    <script src="/static/js/partituras-treinoCarrossel.js"></script>
+</body>
+</html>

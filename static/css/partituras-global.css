@@ -1,0 +1,31 @@
+/* Estilos globais: */
+
+/*! CORES Fazer ROOTer*/
+/* 
+- Fazer Paleta de Cores Thema Dark end Ligth
+- 
+
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e5da;
+    color: #6e9169;
+    margin: 0;
+    padding: 0;
+}
+.partituras-titulo h1,
+.partituras-titulo h2,
+.partituras-titulo h3 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.partituras-container {
+    max-width: 100vw;
+    padding: 10px;
+}
+

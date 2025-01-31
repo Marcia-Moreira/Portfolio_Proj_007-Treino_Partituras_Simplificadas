@@ -1,0 +1,79 @@
+.
+├── README.md
+├── estrutura_do_projeto.txt
+├── index.html
+├── static
+│   ├── assets
+│   │   ├── audio
+│   │   └── images
+│   ├── css
+│   │   ├── partituras-acordesComponentes.css
+│   │   ├── partituras-cardImage.css
+│   │   ├── partituras-global.css
+│   │   ├── partituras-index.css
+│   │   ├── partituras-responsividadeTela.css
+│   │   └── partituras-treino.css
+│   └── js
+│       ├── partituras-abrirJanelaMenor.js
+│       ├── partituras-alternarSom.js
+│       ├── partituras-carregarAcordesComponentes.js
+│       ├── partituras-fecharJanela.js
+│       ├── partituras-index.js
+│       ├── partituras-maximizarJanela.js
+│       └── partituras-treinoCarrossel.js
+├── templates
+│   ├── acordesComponentes
+│   │   ├── acorde-.html
+│   │   ├── acorde-doMaior.html
+│   │   ├── acorde-doMenor.html
+│   │   ├── acorde-doSetima.html
+│   │   ├── acorde-faMaior.html
+│   │   ├── acorde-faMenor.html
+│   │   ├── acorde-faSustenidoMenor.html
+│   │   ├── acorde-laMenor.html
+│   │   ├── acorde-laSetima.html
+│   │   ├── acorde-miMenor.html
+│   │   ├── acorde-reMaior.html
+│   │   ├── acorde-reMenor.html
+│   │   ├── acorde-reSetima.html
+│   │   ├── acorde-siBemolSetima.html
+│   │   ├── acorde-siSetima.html
+│   │   ├── acorde-solMenor.html
+│   │   └── acorde-solSetima.html
+│   ├── letras-musicas
+│   │   ├── partituras-treino-musica_01.html
+│   │   ├── partituras-treino-musica_02.html
+│   │   └── partituras-treino-musica_03.html
+│   ├── partituras-config.html
+│   └── partituras-treino.html
+└── testes_do_projeto
+    ├── Ideias_iniciais_do_projeto.txt
+    ├── gabarito_dos_acordes.html
+    ├── informacoes_sobre_web_componentes.md
+    ├── pagina_2_teste.html
+    ├── partituras-abrirModalFlutuante.html
+    ├── partituras-componenteAcordeCard copyGPT.js
+    ├── partituras-componenteAcordeCard.js
+    ├── partituras-index copy.html
+    ├── partituras-treino-musica1 copy.html
+    ├── projeto_chat_gpt
+    │   ├── Ideias_iniciais_do_projeto.txt
+    │   ├── README.md
+    │   ├── rascunho_001.html
+    │   ├── static
+    │   │   ├── css
+    │   │   │   └── partituras-style.css
+    │   │   ├── images
+    │   │   ├── js
+    │   │   │   └── partituras-script.js
+    │   │   └── songs
+    │   └── templates
+    │       ├── partituras-config.html
+    │       ├── partituras-index.html
+    │       ├── partituras-treino-musica1.html
+    │       ├── partituras-treino-musica2.html
+    │       ├── partituras-treino-musica3.html
+    │       └── partituras-treino.html
+    └── rascunho_001.html
+
+17 directories, 59 files

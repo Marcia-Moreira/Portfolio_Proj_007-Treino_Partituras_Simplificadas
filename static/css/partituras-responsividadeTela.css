@@ -1,0 +1,17 @@
+
+/* RESPONSIVIDADE DE TODAS AS TELAS: */
+
+@media (max-width: 600px) {
+    .partituras-controles button {
+    /*! REVER */
+        gap: 3px;
+        max-width: 40px;
+        max-height: 40px;
+    }
+    /* Ocultar o texto em telas pequenas (somente emojis) */
+    .partituras-controles button span {
+        display: none;
+        /*! REVER: */
+        transition: 1s ease-in-out;
+    }
+}

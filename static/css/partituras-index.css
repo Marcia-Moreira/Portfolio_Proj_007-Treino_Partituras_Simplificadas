@@ -1,0 +1,27 @@
+/* Estilos específicos da página inicial: */
+.partituras-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.partituras-botao {
+    padding: 10px 20px;
+    background-color: #6e9169;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    min-height: 35px;
+    transition: 0.5s ease-in-out;
+}
+.partituras-botao p {
+    margin: 2px;
+    letter-spacing: 4px;
+}
+.partituras-botoes a {
+    text-align: center;
+}
+.partituras-botao:hover {
+    background-color: #a1c79b;
+    color: #6e9169;
+}
