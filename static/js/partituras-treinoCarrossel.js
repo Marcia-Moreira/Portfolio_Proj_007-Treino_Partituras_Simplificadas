@@ -85,35 +85,38 @@ function alterarVelocidade(novaVelocidade) {
 //? CÓDIGO PARA SOM/VOZ NO CARROSSEL:
 // partituras-treinoCarrossel.js
 
-const audioAtivo = true; // Por padrão, o áudio está ativo
+// const audioAtivo = true; // Por padrão, o áudio está ativo
 //! Mas está falando só o mesmo acorde o tempo todo logo que carrega a tela sem apertar o play!!!! Deve estar Ativo apenas se apertar o PLAY
 //! Aperto o botão de som ativo ou não e não funciona nada.
 
-// Função para reproduzir o áudio do acorde
-function reproduzirAudio(acorde) {
-  //! Se audio Ativo e Play Ativo!!!!
-  if (audioAtivo) {
-    //! Preciso desconbrir o que ele está lendo!!! e quando, pois precisamos ler só quem aparece/passa ao centro da página!!!
-    const utterance = new SpeechSynthesisUtterance(acorde);
-    speechSynthesis.speak(utterance);
-  }
-}
 
+//! SEPAREI OUTRA VERSÃO DESSE CODIGO:
+// Função para reproduzir o áudio do acorde
+// function reproduzirAudio(acorde) {
+  //! Se audio Ativo e Play Ativo!!!!
+  // if (audioAtivo) {
+    //! Preciso desconbrir o que ele está lendo!!! e quando, pois precisamos ler só quem aparece/passa ao centro da página!!!
+    // const utterance = new SpeechSynthesisUtterance(acorde);
+    // speechSynthesis.speak(utterance);
+//   }
+// }
+
+//! TEM OUTRO CODIGO VERIFICAR COMO EXCLUIR ESSE TRECHO!!!!
 // Verifica quando um card entra na área central
 //! Não consegui identificar essa área central x voz falada. Vamos fazer um css para sombrear essa área central?
-function verificarCardCentral() {
-  const cards = document.querySelectorAll('.card-container');
-  cards.forEach(card => {
-    const rect = card.getBoundingClientRect();
-    const centroTela = window.innerWidth / 2;
+// function verificarCardCentral() {
+//   const cards = document.querySelectorAll('.card-container');
+//   cards.forEach(card => {
+//     const rect = card.getBoundingClientRect();
+//     const centroTela = window.innerWidth / 2;
 
-    if (rect.left <= centroTela && rect.right >= centroTela) {
-      const acorde = card.querySelector('.card-acorde').getAttribute('data-acorde');
-      reproduzirAudio(acorde);
-    }
-  });
-}
-
-// Observa o movimento do carrossel para verificar o card central
-//! Ainda não consegui identificar para corrigir ou aprovar
-setInterval(verificarCardCentral, 100);
+    // Verifica se o card está na área central
+    // if (rect.left <= centroTela && rect.right >= centroTela) {
+    //   card.style.opacity = '1'; // Destaca o card
+    //   const acorde = card.querySelector('.card-acorde').getAttribute('data-acorde');
+    //   reproduzirAudio(acorde);
+    // } else {
+    //   card.style.opacity = '0.5'; // Esmaece os cards laterais
+  //   }
+  // });
+// }

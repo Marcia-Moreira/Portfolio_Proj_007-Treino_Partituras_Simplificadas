@@ -1,0 +1,45 @@
+
+/* Codigos para Carrossel: */
+
+/*! Para destacar o Card ao Centro de Tela no Carrossel: VERIFICAR A EXCLUSÃO DESSA CLASSE*/
+.partituras-carrossel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    background: rgba(255, 0, 0, 0.5);
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+/* Movimentos do Carrossel: */
+.partituras-carrossel {
+    display: flex;
+
+    width: max-content; /* A largura do carrossel se ajusta ao conteúdo */
+    animation: moverCarrossel 20s linear infinite; /* Velocidade média inicial */
+    animation-play-state: paused; /* Inicia pausado */
+
+    overflow-x: auto; /* Permite rolagem manual */
+    /* overflow-x: hidden; */
+  }
+/*! Quando o carrossel está em movimento, desabilita a rolagem */
+.partituras-carrossel[data-playing="true"] {
+    overflow-x: hidden;
+}
+  
+  @keyframes moverCarrossel {
+    0% {
+        /* Começa da direita */
+        /* "0" para quando carregar a página */
+        /* "100%" para quando paretar o play? condição? */
+      /* transform: translateX(100%); */
+      transform: translateX(0);
+    }
+    100% {
+        /* Move para a esquerda */
+      transform: translateX(-100%);
+    }
+  }

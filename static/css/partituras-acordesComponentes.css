@@ -1,6 +1,11 @@
 /* Acordes Componentes: */
 
 .card-container {
+    flex: 0 0 auto; /* Impede que os cards diminuam de tamanho */
+    /* width: 300px;  */
+    /* Largura fixa para cada card (ajuste conforme necessário) */
+    /* margin-right: 10px;  */
+    /* Espaçamento entre os cards */
     /* min-width: 300px; */
     padding: 10px;
     background-color: #f4f4f4;
@@ -32,3 +37,14 @@
     max-width: 130px;
     max-height: 200px;
 }
+/* Marcaçao Vermelha meio da Tela */
+#area-central {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: rgba(255, 0, 0, 0.5);
+    transform: translateX(-50%);
+    z-index: 1000; /* Garante que a linha fique acima do carrossel */
+  }
