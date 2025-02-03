@@ -1,21 +1,6 @@
 
 /* Codigos para Carrossel: */
 
-/*! Para destacar o Card ao Centro de Tela no Carrossel: VERIFICAR A EXCLUSÃO DESSA CLASSE*/
-/* .partituras-carrossel::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 10px;
-    background: rgba(255, 0, 0, 0.5);
-    transform: translateX(-50%);
-    z-index: 1;
-  } */
-
-
-
 /* Movimentos do Carrossel: */
 .partituras-carrossel {
     display: flex;
@@ -25,11 +10,7 @@
     overflow-x: auto; /* Permite rolagem manual */
     /* overflow-x: hidden; */
   }
-/*! Quando o carrossel está em movimento, desabilita a rolagem */
-.partituras-carrossel[data-playing="true"] {
-    overflow-x: hidden;
-}
-  
+
 @keyframes moverCarrossel {
   0% {
       /* Começa da direita */
@@ -42,4 +23,23 @@
       /* Move para a esquerda */
     transform: translateX(-100%);
   }
+}
+
+/*! Quando o carrossel está em movimento, desabilita a rolagem */
+/* .partituras-carrossel[data-playing="true"] {
+    overflow-x: hidden;
+} */
+
+
+/*! REVER */
+/* Esconde os cards quando o carrossel está em movimento */
+.partituras-carrossel[data-playing="true"] .card-container {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Mostra os cards quando o carrossel está pausado */
+.partituras-carrossel[data-playing="false"] .card-container {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }

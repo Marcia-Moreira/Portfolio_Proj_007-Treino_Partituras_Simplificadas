@@ -3,6 +3,7 @@
 const carrossel = document.querySelector('.partituras-carrossel');
 let isPlaying = false;
 
+//* OK FUNÇÃO INICIAR CARROSSEL:
 function iniciarCarrossel() {
   if (!isPlaying) {
     isPlaying = true;
@@ -10,7 +11,7 @@ function iniciarCarrossel() {
     carrossel.style.animationPlayState = 'running'; // Inicia a animação
   }
 }
-
+//* OK FUNÇÃO PAUSAR CARROSSEL:
 function pausarCarrossel() {
   if (isPlaying) {
     isPlaying = false;
