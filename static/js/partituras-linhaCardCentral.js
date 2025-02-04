@@ -8,9 +8,9 @@ const cards = document.querySelectorAll('.card-container');
 let ultimoAcordeReproduzido = null; // Evita repetição do áudio
 
 function verificarCardCentral() {
-  const rectAreaCentral = areaCentral.getBoundingClientRect();
-  const centroTela = rectAreaCentral.left + rectAreaCentral.width / 2;
-  // ! Descobrir como por a fala antes do cartão entrar na linha central
+  // const rectAreaCentral = areaCentral.getBoundingClientRect();
+  // const centroTela = rectAreaCentral.left + rectAreaCentral.width / 2;
+  const centroTela = window.innerWidth / 2; // Calcula o centro do viewport
 
   cards.forEach(card => {
     const rectCard = card.getBoundingClientRect();
@@ -25,14 +25,14 @@ function verificarCardCentral() {
     // Verifica se o centro do card está na área central
     const acorde = card.querySelector('.talk-chord').textContent; // Lê o conteúdo do campo talk-chord
 
-      // Reproduz o áudio apenas se for um acorde novo:
+      // Reproduz o áudio apenas se for um acorde novo mesmo que igual ao anterior:
       if (acorde !== ultimoAcordeReproduzido) {
-        if (centroCard >= centroTela - margemFala && centroCard <= centroTela + margemFala) {
+        if (centroCard >= centroTela - margemFala && centroCard <= centroTela + margemFala + 50) {
           reproduzirAudio(acorde);
           ultimoAcordeReproduzido = acorde; // Atualiza o último acorde reproduzido
         }
       }
-      //! Rever se podemos colocar no html todos os audios falados nome de acordes?  
+
       // Verifica se o card está na área central para destacá-lo
       if (centroCard >= centroTela - margemDestaque && centroCard <= centroTela + margemDestaque) {
         card.style.opacity = '1'; // Destaca o card
