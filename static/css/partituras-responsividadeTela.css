@@ -1,6 +1,13 @@
 
 /* RESPONSIVIDADE DE TODAS AS TELAS: */
 
+/* Para telas menores, ajuste a largura dos cards */
+@media (max-width: 768px) {
+    .card-container {
+        flex: 0 0 50%; /* Cada card ocupa metade da tela */
+    }
+}
+
 @media (max-width: 600px) {
     .partituras-controles button {
     /*! REVER */

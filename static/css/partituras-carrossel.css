@@ -4,11 +4,14 @@
 /* Movimentos do Carrossel: */
 .partituras-carrossel {
     display: flex;
-    width: max-content; /* A largura do carrossel se ajusta ao conteúdo */
+    width: max-content; 
+    /* A largura do carrossel se ajusta ao conteúdo */
     animation: moverCarrossel 90s linear infinite; /* Velocidade média inicial 90s */
     animation-play-state: paused; /* Inicia pausado */
     overflow-x: auto; /* Permite rolagem manual */
     /* overflow-x: hidden; */
+    scroll-snap-type: x mandatory;
+    /* Faz os cards se alinharem na tela */
   }
 
 @keyframes moverCarrossel {
