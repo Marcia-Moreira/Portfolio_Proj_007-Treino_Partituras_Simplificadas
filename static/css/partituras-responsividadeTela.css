@@ -4,11 +4,16 @@
 /* Para telas menores, ajuste a largura dos cards */
 @media (max-width: 768px) {
     .card-container {
-        flex: 0 0 50%; /* Cada card ocupa metade da tela */
+        /* flex: 0 0 50%; */
+         /* Cada card ocupa metade da tela */
+        flex: 0 0 33.33%;
     }
 }
 
 @media (max-width: 600px) {
+    .card-container {
+        flex: 0 0 50%; /* 2 cards por linha */
+    }
     .partituras-controles button {
     /*! REVER */
         gap: 3px;

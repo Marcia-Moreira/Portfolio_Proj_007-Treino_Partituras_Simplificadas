@@ -38,7 +38,7 @@
 /* Esconde os cards quando o carrossel está em movimento */
 .partituras-carrossel[data-playing="true"] .card-container {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Mostra os cards quando o carrossel está pausado */
