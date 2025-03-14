@@ -1,38 +1,36 @@
 
-/* Codigos para Carrossel: */
+/* Codigos para Movimentar Carrossel: */
 
-/* Movimentos do Carrossel: */
+/* Movimentos do Carrossel: da Direita para Esquerda 55% da Tela */
 .partituras-carrossel {
-    display: flex;
-    width: max-content; 
-    /* A largura do carrossel se ajusta ao conteúdo */
-    animation: moverCarrossel 90s linear infinite; /* Velocidade média inicial 90s */
-    animation-play-state: paused; /* Inicia pausado */
-    overflow-x: auto; /* Permite rolagem manual */
-    /* overflow-x: hidden; */
-    scroll-snap-type: x mandatory;
-    /* Faz os cards se alinharem na tela */
-  }
+  display: flex;
+  width: max-content; 
+  /* A largura do carrossel se ajusta ao conteúdo */
+  animation: moverCarrossel 90s linear infinite; /* Velocidade média inicial 90s */
+  animation-play-state: paused; /* Inicia pausado */
+  overflow-x: auto; /* Permite rolagem manual */
+  /* overflow-x: hidden; */
+  scroll-snap-type: x mandatory;
+  /* Faz os cards se alinharem na tela */
+  /* Início do Carrossel antes da Faixa Central: */
+  transform: translateX(55vw);
+}
 
 @keyframes moverCarrossel {
   0% {
-      /* Começa da direita */
-      /* "0" para quando carregar a página */
-      /* "100%" para quando paretar o play? condição? */
-    /* transform: translateX(100%); */
-    transform: translateX(0);
+    /* Para iniciar os Cards antes da Faixa Central: */
+    transform: translateX(55vw);
   }
   100% {
-      /* Move para a esquerda */
+    /* Move para a esquerda até o final: */
     transform: translateX(-100%);
   }
 }
 
-/*! Quando o carrossel está em movimento, desabilita a rolagem */
-/* .partituras-carrossel[data-playing="true"] {
+/*! Quando o carrossel está em movimento, desabilita a rolagem - não sei pq estava comentado!! */
+.partituras-carrossel[data-playing="true"] {
     overflow-x: hidden;
-} */
-
+}
 
 /*! REVER */
 /* Esconde os cards quando o carrossel está em movimento */

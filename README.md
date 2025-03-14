@@ -53,7 +53,7 @@ Controles de velocidade (devagar, médio, rápido).
 
 Reprodução de áudio do YouTube ou áudio gravado.
 
-Áudio que fala o nome do acorde quando ele aparece na tela.
+Áudio que fala o nome do acorde quando ele aparece na tela.  
 
 2. Funcionalidades
 Página Inicial:

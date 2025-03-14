@@ -1,11 +1,14 @@
 
 /* RESPONSIVIDADE DE TODAS AS TELAS: */
 
+
+
+
 /* Para telas menores, ajuste a largura dos cards */
 @media (max-width: 768px) {
     .card-container {
         /* flex: 0 0 50%; */
-         /* Cada card ocupa metade da tela */
+        /* Cada card ocupa metade da tela */
         flex: 0 0 33.33%;
     }
 }
@@ -26,4 +29,184 @@
         /*! REVER: */
         transition: 1s ease-in-out;
     }
+}
+
+/*? Note 20 Plus Tela Horizontal: */
+@media (max-width: 916px) and (orientation: landscape) {
+    body {
+        color: red;
+        /* overflow-y: hidden; */
+    }
+    /* ************************************** */
+    /** partituras-global.css: Tamanho das Fontes */
+    .partituras-titulo h1,
+    .partituras-titulo h2,
+    .partituras-titulo h3 {
+        padding-bottom: 4px;
+    }
+    .partituras-titulo h1 {
+        font-size: 20px;
+    }
+    .partituras-titulo h2 {
+        font-size: 18px;
+    }
+    .partituras-titulo h3 {
+        font-size: 14px;
+    }
+    .partituras-container {
+        padding: 5px;
+    }
+    /* ************************************** */
+    /** partituras-index.css: Botões da Lista de Músicas */
+    /* Estilos específicos da página inicial: */
+    .partituras-botoes {
+        gap: 8px;
+    }
+    .partituras-botao {
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 1.2em;
+        min-height: 25px;
+    }
+    .partituras-botao p {
+        margin: 2px;
+        letter-spacing: 4px;
+    }
+    /* ************************************** */
+    /** partituras-treino.css: Estilos da Página de Cards */
+    /* Estilos específicos da página de treino */
+    .partituras-controles {
+        gap: 8px;
+        max-width: 95vw;
+    }
+    /* Ajuste do tamanho dos botões */
+    .partituras-controles button {
+        gap: 4px; /* Espaço entre Ícone e Texto */
+        padding: 4px;
+        /* Altera tamanho da Fonte e do Emoji: */
+        font-size: 16px;
+        min-width: 60px;
+        min-height: 14px;
+        margin-bottom: 4px;
+    }
+    .partituras-controles button span {
+        /* Diminui o tamanho apenas da fonte: */
+        display: none;
+        /* font-size: 10px; */
+        /* font-weight: 600; */
+        /* letter-spacing: 1.5px; */
+        transition: opacity 0.3s ease;
+    }
+    .partituras-carrossel {
+        gap: 10px;
+        padding: 8px;
+    }
+    .partituras-card {
+        /*! Não alterei Nada - Testar Primeiro */
+        padding: 10px;
+        border-radius: 10px;
+        /*! Não alterei Nada - Testar Primeiro */
+        /* Tamanho Padrão: */
+        min-width: 150px;
+        min-height: 285px;
+        max-width: 150px;
+        max-height: 285px;
+    }
+    /* ************************************** */
+
+    /* ************************************** */
+    /* ************************************** */
+    /* ************************************** */
+
+        
+}
+
+/*? Note 20 Plus Tela Vertical: */
+@media (max-width: 412px) {
+
+    body {
+        color: blueviolet;
+    }
+    /* ************************************** */
+    /** partituras-global.css: Tamanho das Fontes */
+    .partituras-titulo h1,
+    .partituras-titulo h2,
+    .partituras-titulo h3 {
+        padding-bottom: 12px;
+    }
+    .partituras-titulo h1 {
+        font-size: 22px;
+    }
+    .partituras-titulo h2 {
+        font-size: 20px;
+    }
+    .partituras-titulo h3 {
+        font-size: 16px;
+    }
+    .partituras-container {
+        padding: 8px;
+    }
+    /* ************************************** */
+    /** partituras-index.css: Botões da Lista de Músicas */
+    /* Estilos específicos da página inicial: */
+    .partituras-botoes {
+        gap: 8px;
+    }
+    .partituras-botao {
+        padding: 7px 14px;
+        border-radius: 4px;
+        font-size: 1.2em;
+        min-height: 30px;
+    }
+    .partituras-botao p {
+        margin: 2px;
+        letter-spacing: 3px;
+    }
+    /* ************************************** */
+    /** partituras-treino.css: Estilos da Página de Cards */
+    /* Estilos específicos da página de treino */
+    .partituras-controles {
+        gap: 8px;
+        max-width: 95vw;
+    }
+    /* Ajuste do tamanho dos botões */
+    .partituras-controles button {
+        gap: 4px; /* Espaço entre Ícone e Texto */
+        padding: 4px;
+        /* Altera tamanho da Fonte e do Emoji: */
+        font-size: 12px;
+        min-width: 70px;
+        min-height: 14px;
+        margin-bottom: 4px;
+    }
+    .partituras-controles button span {
+        /* Diminui o tamanho apenas da fonte: */
+        display: none;
+        /* font-size: 10px; */
+        /* font-weight: 600; */
+        /* letter-spacing: 1.5px; */
+        transition: opacity 0.3s ease;
+    }
+    .partituras-carrossel {
+        gap: 10px;
+        padding: 8px;
+    }
+    .partituras-card {
+        /*! Não alterei Nada - Testar Primeiro */
+        padding: 10px;
+        border-radius: 10px;
+        /*! Não alterei Nada - Testar Primeiro */
+        /* Tamanho Padrão: */
+        min-width: 150px;
+        min-height: 285px;
+        max-width: 150px;
+        max-height: 285px;
+    }
+    /* ************************************** */
+
+    /* ************************************** */
+    /* ************************************** */
+    /* ************************************** */
+
+    
 }

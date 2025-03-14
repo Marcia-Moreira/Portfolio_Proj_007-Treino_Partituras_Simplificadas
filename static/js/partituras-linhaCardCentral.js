@@ -10,7 +10,10 @@ let ultimoAcordeReproduzido = null; // Evita repetição do áudio
 function verificarCardCentral() {
   // const rectAreaCentral = areaCentral.getBoundingClientRect();
   // const centroTela = rectAreaCentral.left + rectAreaCentral.width / 2;
-  const centroTela = window.innerWidth / 2; // Calcula o centro do viewport
+  // const centroTela = window.innerWidth / 2;
+  // Calcula o centro do viewport
+  const areaCentral = window.innerWidth / 2; 
+  // Calcula o centro do viewport
 
   cards.forEach(card => {
     const rectCard = card.getBoundingClientRect();
@@ -25,16 +28,17 @@ function verificarCardCentral() {
     // Verifica se o centro do card está na área central
     const acorde = card.querySelector('.talk-chord').textContent; // Lê o conteúdo do campo talk-chord
 
-      // Reproduz o áudio apenas se for um acorde novo mesmo que igual ao anterior:
+      // Reproduz o áudio apenas se for um acorde novo, mesmo que igual ao anterior:
       if (acorde !== ultimoAcordeReproduzido) {
-        if (centroCard >= centroTela - margemFala && centroCard <= centroTela + margemFala + 50) {
+        // areaCentral ou centroTela?
+        if (centroCard >= areaCentral - margemFala && centroCard <= areaCentral + margemFala + 50) {
           reproduzirAudio(acorde);
           ultimoAcordeReproduzido = acorde; // Atualiza o último acorde reproduzido
         }
       }
 
       // Verifica se o card está na área central para destacá-lo
-      if (centroCard >= centroTela - margemDestaque && centroCard <= centroTela + margemDestaque) {
+      if (centroCard >= areaCentral - margemDestaque && centroCard <= areaCentral + margemDestaque) {
         card.style.opacity = '1'; // Destaca o card
       } else {
         card.style.opacity = '0.6'; // Esmaece os cards laterais
