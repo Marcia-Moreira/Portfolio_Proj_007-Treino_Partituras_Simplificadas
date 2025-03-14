@@ -9,5 +9,13 @@ function abrirJanelaMenor(url) {
 
     // Abre a nova janela e armazena a referência globalmente
     minhaJanela = window.open(url, '_blank', `width=${largura},height=${altura},resizable=yes`);
+
+    // Adiciona o viewport meta tag dinamicamente na página de partituras
+    minhaJanela.onload = function() {
+        let metaViewport = document.createElement('meta');
+        metaViewport.name = 'viewport';
+        metaViewport.content = 'width=device-width, initial-scale=1.0';
+        minhaJanela.document.head.appendChild(metaViewport);
+    };
 }
 {/* </script> */}

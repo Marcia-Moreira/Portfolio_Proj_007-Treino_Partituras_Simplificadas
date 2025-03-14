@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    touch-action: manipulation; /* Evita zoom em elementos touch */
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #d9e5da;
