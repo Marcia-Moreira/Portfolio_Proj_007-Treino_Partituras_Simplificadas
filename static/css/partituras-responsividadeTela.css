@@ -1,15 +1,23 @@
 
 /* RESPONSIVIDADE DE TODAS AS TELAS: */
 
-
-
-
 /* Para telas menores, ajuste a largura dos cards */
 @media (max-width: 768px) {
     .card-container {
         /* flex: 0 0 50%; */
         /* Cada card ocupa metade da tela */
         flex: 0 0 33.33%;
+    }
+    #area-central {
+        position: absolute;
+        left: 50%;
+        top: 44%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: 330px;
+        /* height: calc(500px - top 200px); */
+        background: rgba(21, 132, 80, 0.5);
+        bottom: 0;
     }
 }
 
@@ -29,14 +37,21 @@
         /*! REVER: */
         transition: 1s ease-in-out;
     }
+    #area-central {
+        position: absolute;
+        left: 50%;
+        top: 44%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: 330px;
+        /* height: calc(500px - top 200px); */
+        background: rgba(21, 132, 80, 0.5);
+        bottom: 0;
+    }
 }
 
 /*? Note 20 Plus Tela Horizontal: */
 @media (max-width: 916px) and (orientation: landscape) {
-    body {
-        color: red;
-        /* overflow-y: hidden; */
-    }
     /* ************************************** */
     /** partituras-global.css: Tamanho das Fontes */
     .partituras-titulo h1,
@@ -113,6 +128,18 @@
         max-height: 285px;
     }
     /* ************************************** */
+    /* Estilos para telas grandes (notebook/desktop) */
+    #area-central {
+        position: absolute;
+        left: 50%;
+        top: 52%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: 420px;
+        /* height: calc(500px - top 200px); */
+        background: rgba(21, 132, 80, 0.5);
+        bottom: 0;
+    }
 
     /* ************************************** */
     /* ************************************** */
@@ -123,10 +150,6 @@
 
 /*? Note 20 Plus Tela Vertical: */
 @media (max-width: 412px) {
-
-    body {
-        color: blueviolet;
-    }
     /* ************************************** */
     /** partituras-global.css: Tamanho das Fontes */
     .partituras-titulo h1,
@@ -203,10 +226,30 @@
         max-height: 285px;
     }
     /* ************************************** */
+    #area-central {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: 330px;
+        /* height: calc(500px - top 200px); */
+        /* background-color: red; */
+        background: rgba(21, 132, 80, 0.5);
+        bottom: 0;
+    }
+}
 
+    /* Estilos para telas pequenas (celular) */
+    @media (max-width: 767px) {
+        #faixa-central {
+            width: 50px;
+            height: 50px;
+        }
+    }
     /* ************************************** */
     /* ************************************** */
     /* ************************************** */
 
     
-}
+

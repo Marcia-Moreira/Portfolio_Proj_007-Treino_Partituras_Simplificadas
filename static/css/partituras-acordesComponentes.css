@@ -53,11 +53,12 @@
 #area-central {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 58%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 330px;
     /* height: calc(500px - top 200px); */
-    background-color: red;
+    /* background-color: red; */
+    background: rgba(21, 132, 80, 0.5);
     bottom: 0;
 }
