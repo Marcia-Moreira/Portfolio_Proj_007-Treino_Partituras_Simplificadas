@@ -8,6 +8,8 @@
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: opacity 0.5s ease, background-color 0.5s ease;
 }
 .card-container .card-letraMusica {
     padding-top: 16px;
@@ -59,6 +61,7 @@
     height: 330px;
     /* height: calc(500px - top 200px); */
     /* background-color: red; */
-    background: rgba(21, 132, 80, 0.5);
+    /*! DESATIVEI a COR: */
+    /* background: rgba(21, 132, 80, 0.5); */
     bottom: 0;
 }

@@ -24,6 +24,7 @@
 @media (max-width: 600px) {
     .card-container {
         flex: 0 0 50%; /* 2 cards por linha */
+        
     }
     .partituras-controles button {
     /*! REVER */

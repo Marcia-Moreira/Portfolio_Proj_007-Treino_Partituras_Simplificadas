@@ -18,8 +18,8 @@ function verificarCardCentral() {
         const centroCard = rectCard.left + rectCard.width / 2;
 
         // Margem para a fala (maior que a margem de destaque)
-        const margemFala = 50; // Ajuste conforme necessário
-        const margemDestaque = 90; // Margem para mudança de cor
+        const margemFala = 90; // Ajuste conforme necessário
+        const margemDestaque = 95; // Margem para mudança de cor
 
         // Verifica se o centro do card está na área central
         const acorde = card.querySelector('.talk-chord').textContent; // Lê o conteúdo do campo talk-chord
@@ -34,9 +34,11 @@ function verificarCardCentral() {
 
         // Verifica se o card está na área central para destacá-lo
         if (centroCard >= centroTela - margemDestaque && centroCard <= centroTela + margemDestaque) {
-            card.style.opacity = '1'; // Destaca o card
+            card.style.opacity = '1';// Destaca o card
+            card.style.backgroundColor = 'rgb(49, 101, 56)'; // Altera a cor de fundo
         } else {
             card.style.opacity = '0.6'; // Esmaece os cards laterais
+            card.style.backgroundColor = ''; // Remove a cor de fundo (volta ao padrão)
         }
     });
 }
