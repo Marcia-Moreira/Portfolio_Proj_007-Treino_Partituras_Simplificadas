@@ -1,5 +1,6 @@
 // {/* <button onclick="maximizar()">Maximizar</button> */}
 
+// partituras-maximizarJanela.js
 //* OK Código para Maximizar a Segunda Tela HTML:
 
 // {/* <script> */}

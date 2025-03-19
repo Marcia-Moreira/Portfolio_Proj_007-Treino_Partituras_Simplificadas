@@ -1,4 +1,5 @@
 // Linha do Card Central:
+// partituras-linhaCardCentral.js
 
 // Observa o movimento do carrossel para verificar o card central
 const areaCentral = document.getElementById('area-central');

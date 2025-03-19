@@ -1,4 +1,5 @@
 // Controle Play Pause:
+// partituras-playPause.js
 
 const carrossel = document.querySelector('.partituras-carrossel');
 let isPlaying = false;

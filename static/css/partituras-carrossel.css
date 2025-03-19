@@ -6,7 +6,7 @@
   display: flex;
   width: max-content; 
   /* A largura do carrossel se ajusta ao conteúdo */
-  animation: moverCarrossel 90s linear infinite; /* Velocidade média inicial 90s */
+  animation: moverCarrossel 80s linear infinite; /* Velocidade média inicial 90s */
   animation-play-state: paused; /* Inicia pausado */
   overflow-x: auto; /* Permite rolagem manual */
   /* overflow-x: hidden; */
