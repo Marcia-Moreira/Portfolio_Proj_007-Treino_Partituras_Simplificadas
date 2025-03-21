@@ -38,12 +38,12 @@
         </div>
 <!-- =================================================== -->
         <div class="partituras-controles">
-            <button id="partituras-play"> ▶️ <span>Play</span> </button>
-            <button id="partituras-pause"> ⏸️ <span>Pause</span> </button>
-            <button id="partituras-velocidade-medio"> 🐢🐢 <span>Devagar</span> </button>
-            <button id="partituras-velocidade-devagar"> 🐢🐢🐢 <span>Muito Lento</span> </button>
-            <button id="partituras-velocidade-rapido"> 🐇🐇 <span>Rápido</span> </button>
-            <button id="partituras-velocidade-superRapido"> 🐇🐇🐇 <span>Super Rápido</span> </button>
+            <!-- BTN Play x Pause -->
+            <button id="partituras-playPause" class="controle-botao"> ▶️ <span>Play</span> </button>
+            <button id="partituras-velocidade-medio" class="grupo-velocidade"> 🐢🐢 <span>Devagar</span> </button>
+            <button id="partituras-velocidade-devagar" class="grupo-velocidade"> 🐢🐢🐢 <span>Muito Lento</span> </button>
+            <button id="partituras-velocidade-rapido" class="grupo-velocidade"> 🐇🐇 <span>Rápido</span> </button>
+            <button id="partituras-velocidade-superRapido" class="grupo-velocidade"> 🐇🐇🐇 <span>Super Rápido</span> </button>
             <!-- <button id="partituras-som">🔊 🔇 <span>Audio</span> </button> -->
             <button id="partituras-som" onclick="alternarSom()">🔊 <span>Som</span></button>
             <button onclick="fecharJanela()"> ❌ <span>Fechar</span> </button>
@@ -427,12 +427,12 @@
 <!-- =================================================== -->
     <!-- <script src="{{ url_for('static', filename='js/partituras-treino.js') }}"></script> -->
     <!-- <script src="../static/js/partituras-treinoCarrossel.js"></script> -->
-    <script src="../../static/js/partituras-index.js"></script>
+    <script src="../../static/js/partituras-botao-ativo.js"></script>
     <script src="../../static/js/partituras-abrirJanelaMenor.js"></script>
     <script src="../../static/js/partituras-playPause.js"></script>
     <script src="../../static/js/partituras-fecharJanela.js"></script>
     <script src="../../static/js/partituras-maximizarJanela.js"></script>
-    <script src="../../static/js/partituras-alternarSom.js"></script>
+    <!-- <script src="../../static/js/partituras-alternarSom.js"></script> -->
     <script src="../../static/js/partituras-carregarAcordesComponentes.js"></script>
     <script src="../../static/js/partituras-linhaCardCentral.js"></script>
     <script src="../../static/js/partituras-velocidade.js"></script>

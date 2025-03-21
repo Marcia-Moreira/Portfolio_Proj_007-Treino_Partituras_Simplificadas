@@ -1,25 +1,28 @@
 // Controle Play Pause:
 // partituras-playPause.js
-
 const carrossel = document.querySelector('.partituras-carrossel');
+const botaoPlayPause = document.getElementById('partituras-playPause'); // Novo botão único
 let isPlaying = false;
 
-//* OK FUNÇÃO INICIAR CARROSSEL:
-function iniciarCarrossel() {
-  if (!isPlaying) {
-    isPlaying = true;
-    carrossel.setAttribute('data-playing', 'true'); // Marca como "em movimento"
-    carrossel.style.animationPlayState = 'running'; // Inicia a animação
-  }
-}
-//* OK FUNÇÃO PAUSAR CARROSSEL:
-function pausarCarrossel() {
-  if (isPlaying) {
-    isPlaying = false;
-    carrossel.setAttribute('data-playing', 'false'); // Marca como "pausado"
-    carrossel.style.animationPlayState = 'paused'; // Pausa a animação
-  }
+// Função para alternar entre Play e Pause
+function alternarCarrossel() {
+    isPlaying = !isPlaying; // Alterna entre ligado/desligado
+
+    if (isPlaying) {
+        carrossel.setAttribute('data-playing', 'true'); // Marca como "em movimento"
+        carrossel.style.animationPlayState = 'running'; // Inicia a animação 
+        // Muda o texto e imagem do botão
+        botaoPlayPause.innerHTML = '⏸️ <span>Pause</span>';
+        marcarBotaoAtivo(botaoPlayPause); // Ativa o destaque
+    } else {
+        carrossel.setAttribute('data-playing', 'false'); // Marca como "pausado"
+        carrossel.style.animationPlayState = 'paused'; // Pausa a animação
+        // Muda o texto e imagem do botão
+        botaoPlayPause.innerHTML = '▶️ <span>Play</span>';
+        // botaoPlayPause.classList.remove('botao-ativo'); 
+        // Remove destaque quando pausado
+    }
 }
 
-document.getElementById('partituras-play').addEventListener('click', iniciarCarrossel);
-document.getElementById('partituras-pause').addEventListener('click', pausarCarrossel);
+// Evento de clique no botão
+botaoPlayPause.addEventListener('click', alternarCarrossel);
