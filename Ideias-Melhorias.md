@@ -1,5 +1,7 @@
 # Ideias de Melhorias
 
+- Organizar a ordem de tamanho de telas de responsividade (URGENTE)
+
 - OK Iniciar os Cards antes da faixa central de leitura
 
 -Botão Maximizar clicado vira para Minimizar
@@ -15,3 +17,5 @@
 - Deixar o Botão ativo escurecido! 
 
 - Criar função para que a tela não fique girando enquanto se toca (Tela Statica)
+
+- OK Incluir Gráfico de Levadas/Batidas 
