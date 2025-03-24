@@ -3,18 +3,17 @@
 /* Container das batidas */
 .batida-padrao {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
-    margin-top: 5px;
 }
 
 /* Quadrado do tempo (comum a todos) */
 .tempo {
-    width: 30px;
-    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 20px;
+    height: 20px;
     font-size: 40px;
 }
 
@@ -49,6 +48,7 @@
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .times-4 {
@@ -67,5 +67,5 @@
 
 .titulo-levada {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
 }
