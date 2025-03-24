@@ -57,8 +57,10 @@
     left: 50%;
     top: 58%;
     transform: translate(-50%, -50%);
-    width: 180px;
-    height: 330px;
+    /* width: 180px; */
+    width: 2px;
+    /* height: 330px; */
+    height: 2px;
     /* height: calc(500px - top 200px); */
     /* background-color: red; */
     /*! DESATIVEI a COR: */

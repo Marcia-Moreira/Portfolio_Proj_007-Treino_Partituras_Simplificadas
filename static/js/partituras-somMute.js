@@ -9,7 +9,9 @@ function alternarSom() {
     // Altera o ícone do botão
     if (audioAtivo) {
         botaoSom.innerHTML = '🔊 <span>Som</span>'; // Ícone de som ligado
+        botaoSom.classList.remove('botao-ativo'); 
     } else {
         botaoSom.innerHTML = '🔇 <span>Som</span>'; // Ícone de som mudo
+        marcarBotaoAtivo(botaoSom); // Ativa o destaque
     }
 }

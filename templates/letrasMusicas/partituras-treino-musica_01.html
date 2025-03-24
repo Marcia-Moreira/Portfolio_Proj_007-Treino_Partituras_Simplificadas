@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../../static/css/partituras-cardImage.css">
     <link rel="stylesheet" href="../../static/css/partituras-acordesComponentes.css">
     <link rel="stylesheet" href="../../static/css/partituras-carrossel.css">
+    <link rel="stylesheet" href="../../static/css/levadas-batidas.css">
 </head>
 <body>
     <div class="partituras-container">
@@ -56,9 +57,11 @@
         </div>
 <!-- =================================================== -->
         <!--! Verificar se Teremos Mesmo pois está Muito Desconfigurado! -->
-        <div id="area-central"></div>
+        <div id="area-central">
+
+        </div>
 <!-- =================================================== -->
-        <!-- INÍCIO CONTAINER MUSICAL -->
+        <!-- INÍCIO CONTAINER MUSICAL ACORDES -->
         <div class="partituras-carrossel">
             <!--? Trecho 00 INICIANDO -->
             <div class="card-container">
@@ -422,18 +425,27 @@
                 </div>
             </div>
         </div>
-        <!-- FIM CONTAINER MUSICAL -->
+        <!-- FIM CONTAINER MUSICAL ACORDES -->
+<!-- =================================================== -->
+        <!-- INÍCIO CONTAINER GRÁFICO DE LEVADAS/BATIDAS -->
+        <div class="levadas-graficos-batidas">
+            <div class="grafico-levada"> <!-- Container PAI -->
+                <div class="container-levada" data-levada="levada-samba"> <!-- Container ONDE A LEVADA SERÁ INSERIDA -->
+                <!-- CARREGAMENTO DAS LEVADAS -->
+                </div>        
+            </div>
+        </div>
+        <!-- FIM CONTAINER GRÁFICO DE LEVADAS/BATIDAS -->
+<!-- =================================================== -->
     </div>
 <!-- =================================================== -->
-    <!-- <script src="{{ url_for('static', filename='js/partituras-treino.js') }}"></script> -->
-    <!-- <script src="../static/js/partituras-treinoCarrossel.js"></script> -->
     <script src="../../static/js/partituras-botao-ativo.js"></script>
     <script src="../../static/js/partituras-abrirJanelaMenor.js"></script>
     <script src="../../static/js/partituras-playPause.js"></script>
     <script src="../../static/js/partituras-fecharJanela.js"></script>
     <script src="../../static/js/partituras-maximizarJanela.js"></script>
-    <!-- <script src="../../static/js/partituras-alternarSom.js"></script> -->
     <script src="../../static/js/partituras-carregarAcordesComponentes.js"></script>
+    <script src="../../static/js/partituras-carregarLevadasComponentes.js"></script>
     <script src="../../static/js/partituras-linhaCardCentral.js"></script>
     <script src="../../static/js/partituras-velocidade.js"></script>
     <script src="../../static/js/partituras-somMute.js"></script>

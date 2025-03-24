@@ -19,7 +19,7 @@ function alternarCarrossel() {
         carrossel.style.animationPlayState = 'paused'; // Pausa a animação
         // Muda o texto e imagem do botão
         botaoPlayPause.innerHTML = '▶️ <span>Play</span>';
-        // botaoPlayPause.classList.remove('botao-ativo'); 
+        botaoPlayPause.classList.remove('botao-ativo');
         // Remove destaque quando pausado
     }
 }
