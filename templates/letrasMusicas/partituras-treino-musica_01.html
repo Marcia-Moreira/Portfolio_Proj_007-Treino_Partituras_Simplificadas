@@ -24,7 +24,134 @@
     <link rel="stylesheet" href="../../static/css/partituras-acordesComponentes.css">
     <link rel="stylesheet" href="../../static/css/partituras-carrossel.css">
     <link rel="stylesheet" href="../../static/css/levadas-batidas.css">
+    <link rel="stylesheet" href="../../static/css/pagina_impressao.css">
 </head>
+<script>
+    function gerarFolhaImpressao() {
+        // Coleta todos os elementos necessários
+        const cards = Array.from(document.querySelectorAll('.card-container'))
+            .filter(card => !card.querySelector('[data-acorde$="intervalo"]')); // Filtra pausas
+        
+        const levadaHTML = document.querySelector('.levadas-graficos-batidas').innerHTML;
+        const tituloHTML = document.querySelector('.partituras-titulo').innerHTML;
+        
+        // HTML da folha com estilos melhorados
+        const htmlFolha = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Folha para Impressão</title>
+            <link rel="stylesheet" href="../../static/css/partituras-global.css">
+            <link rel="stylesheet" href="../../static/css/partituras-cardImage.css">
+            <link rel="stylesheet" href="../../static/css/levadas-batidas.css">
+            <style>
+                body { 
+                    padding: 20px; 
+                    background: white !important;
+                    text-align: center;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    font-family: Arial, sans-serif;
+                }
+                .conteudo-centralizado {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+                .grade-cards { 
+                    display: grid; 
+                    grid-template-columns: repeat(6, minmax(100px, 1fr));
+                    gap: 15px;
+                    width: 95%;
+                    margin: 20px auto;
+                    justify-items: center;
+                }
+                .card-container { 
+                    width: 100% !important;
+                    max-width: 150px;
+                    break-inside: avoid;
+                }
+                .partituras-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                .card-letraMusica {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+                .card-letraMusica p {
+                    margin: 3px 0;
+                    padding: 0 5px;
+                }
+                .levadas-graficos-batidas {
+                    margin: 20px auto;
+                    width: 90%;
+                    text-align: center;
+                }
+                .grafico-levada {
+                    justify-content: center !important;
+                    display: flex;
+                }
+                .partituras-titulo {
+                    margin-bottom: 15px;
+                }
+                @media print {
+                    .no-print { display: none; }
+                    body { zoom: 0.9; }
+
+                    .card-container { 
+                        page-break-inside: avoid;
+                    }
+                    .dedo {
+                        background-color: #388E3C !important;
+                        color: white !important;
+                        border: 1px solid #388E3C !important;
+                        -webkit-print-color-adjust: exact !important;
+                        print-color-adjust: exact !important;
+                        font-weight: bold;
+                    }
+                    .partituras-card {
+                        background: white !important;
+                        -webkit-print-color-adjust: exact !important;
+                        print-color-adjust: exact !important;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="no-print" style="margin:20px;">
+                <button onclick="window.print()" style="padding:8px 15px;margin:5px;">🖨️ Imprimir</button>
+                <button onclick="window.close()" style="padding:8px 15px;margin:5px;">❌ Fechar</button>
+            </div>
+        
+            <div class="conteudo-centralizado">
+                <!-- Cabeçalho -->
+                ${tituloHTML}
+                
+                <!-- Gráfico de Batida -->
+                ${levadaHTML}
+                
+                <!-- Grade de Cards -->
+                <div class="grade-cards">
+                    ${cards.map(card => card.outerHTML).join('')}
+                </div>
+            </div>
+        </body>
+        </html>
+        `;
+        
+        // Abre em nova aba // #4CAF50 #388E3C
+        const novaJanela = window.open('', '_blank');
+        novaJanela.document.write(htmlFolha);
+        novaJanela.document.close();
+    }
+</script>
 <body>
     <div class="partituras-container">
 <!-- =================================================== -->
@@ -44,6 +171,7 @@
             <button id="partituras-som" onclick="alternarSom()">🔊 <span>Som</span></button>
             <button onclick="fecharJanela()"> ❌ <span>Fechar</span> </button>
             <button onclick="maximizar()"> ⛶ <span>Maximizar</span> </button>
+            <button onclick="gerarFolhaImpressao()"> 📄 <span>Folha para Impressão</span> </button>
         </div>
 <!-- =================================================== -->
         <!-- INÍCIO CONTAINER GRÁFICO DE LEVADAS/BATIDAS -->

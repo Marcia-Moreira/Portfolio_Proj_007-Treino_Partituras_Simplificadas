@@ -1,0 +1,36 @@
+/* Página de Impressão dos Cards */
+
+/* Estilo específico para a folha de impressão */
+@media print {
+    .card-acorde {
+        transform: scale(0.9);
+    }
+    .card-letraMusica p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    /* Garante que as bolinhas verdes apareçam na impressão */
+    .dedo {
+        background-color: #4CAF50 !important; /* Verde */
+        color: white !important;
+        border: 1px solid #388E3C !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Melhora a visibilidade dos números */
+    .dedo {
+        font-weight: bold;
+        text-shadow: none !important;
+    }
+
+    /* Garante que o fundo dos cards não fique transparente */
+    .partituras-card {
+        background: white !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        border: 1px solid #ccc;
+        padding: 10px;
+        height: auto !important;
+    }
+}
