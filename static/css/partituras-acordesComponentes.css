@@ -67,3 +67,18 @@
     /* background: rgba(21, 132, 80, 0.5); */
     bottom: 0;
 }
+
+/* .partituras-carrosel */
+
+div.area-divisadeiro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    margin: auto;
+    background-color: rgb(49, 101, 56);
+    width: 2px;
+    max-width: 3vw;
+    height: 100px;
+    max-height: 80vh;
+}
