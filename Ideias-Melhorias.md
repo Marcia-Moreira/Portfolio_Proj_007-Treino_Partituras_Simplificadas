@@ -25,3 +25,5 @@
 - Colocar Marcações de Divisão do Tempo de Batida - Apelido da classe: Divisadeiro
 
 - A palavra “divisadero”, que significa tanto uma rua em São Francisco quanto o conceito de divisão ou separação, é central ao tema da obra: as divisões ...
+
+- Não consegui colocar as divisas na página de impressão, so no programa.

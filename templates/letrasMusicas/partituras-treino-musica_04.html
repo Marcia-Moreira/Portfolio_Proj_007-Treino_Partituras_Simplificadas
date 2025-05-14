@@ -15,7 +15,7 @@
         });
     </script>
     
-    <title>Treino - Música 1</title>
+    <title>Treino - Música 4</title>
     <link rel="stylesheet" href="../../static/css/partituras-index.css">
     <link rel="stylesheet" href="../../static/css/partituras-global.css">
     <link rel="stylesheet" href="../../static/css/partituras-treino.css">
@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="../../static/css/levadas-batidas.css">
     <link rel="stylesheet" href="../../static/css/pagina_impressao.css">
 </head>
-<!-- SCRIPT para Impressão dos Acordes na Impressora pdf: -->
 <script>
     function gerarFolhaImpressao() {
         // Coleta todos os elementos necessários
@@ -36,7 +35,7 @@
         const levadaHTML = document.querySelector('.levadas-graficos-batidas').innerHTML;
         const tituloHTML = document.querySelector('.partituras-titulo').innerHTML;
         
-        // HTML da folha com estilos melhorados para impressão:
+        // HTML da folha com estilos melhorados
         const htmlFolha = `
         <!DOCTYPE html>
         <html>
@@ -122,7 +121,6 @@
                         -webkit-print-color-adjust: exact !important;
                         print-color-adjust: exact !important;
                     }
-
                 }
             </style>
         </head>
@@ -138,7 +136,7 @@
                 
                 <!-- Gráfico de Batida -->
                 ${levadaHTML}
-
+                
                 <!-- Grade de Cards -->
                 <div class="grade-cards">
                     ${cards.map(card => card.outerHTML).join('')}
@@ -158,8 +156,8 @@
     <div class="partituras-container">
 <!-- =================================================== -->
         <div class="partituras-titulo">
-            <h2> Flor Amorosa - Joaquim Callado </h2>
-            <h3> Tonalidade:   /   </h3>
+            <h2> Alguém me avisou - Dona Ivone Lara </h2>
+            <h3> Tonalidade:   C   /  Dó Maior     </h3>
         </div>
 <!-- =================================================== -->
         <div class="partituras-controles">
@@ -179,7 +177,8 @@
         <!-- INÍCIO CONTAINER GRÁFICO DE LEVADAS/BATIDAS -->
         <div class="levadas-graficos-batidas">
             <div class="grafico-levada"> <!-- Container PAI -->
-                <div class="container-levada" data-levada="levada-choro"> <!-- Container ONDE A LEVADA SERÁ INSERIDA -->
+                <!-- Partido Alto -->
+                <div class="container-levada" data-levada="levada-treino02"> <!-- Container ONDE A LEVADA SERÁ INSERIDA -->
                 <!-- CARREGAMENTO DAS LEVADAS -->
                 </div>        
             </div>
@@ -203,597 +202,389 @@
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-A-inicio"></div>
                     <div class="card-letraMusica">
-                        <p>BLOCO</p>
-                        <p> A </p>
+                        <p> </p>
+                        <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <!--? Teste de Impressão do Divisor não funcionou em 12-05-2025 -->
-            <div class="area-divisadeiro">
-                <div class="divisorzinho"></div>
+            <!--? REFRÃO: -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p> </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
             </div>
-            <div class="area-divisadeiro">
-                <div class="divisorzinho"></div>
-            </div>
-            <!-- Trecho 01 -->
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
+                        <p> </p>
                         <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro">
-                <div class="divisorzinho"></div>
-            </div>
-            <!-- Trecho 02 -->
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p> <br> </p>
+                        <p>  </p>
+                        <p> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 03 -->
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
+                        <p>  </p>
+                        <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 04 -->
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 05 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-C7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
+                        <p>  </p>
                         <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <!-- Trecho 06 -->
             <div class="card-container">
                 <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
                     <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> A </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 07 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 08 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMenor-Fm"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
+                        <p>  </p>
                         <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 09 -->
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
                     <div class="card-letraMusica">
-                        <p></p>
+                        <p>  </p>
                         <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <!-- Trecho 10 -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p>  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-miMenor-Em"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-miMenor-Em"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p>  </p>
+                    </div>
+                </div>
+            </div>
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-laSetima-A7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 11 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
+                        <p>  </p>
                         <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <!-- Trecho 12 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p> <br> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 13 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Falta criar os dois pontos! -->
-            <div class="area-divisadeiro"></div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
-                    <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> B </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 14 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p> <br> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 15 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!--?Trecho 16 Falta-->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-miSetima-E7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 17 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
-                    <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> B </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 18 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p> <br> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 19 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 21 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p> <br> </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-siSetima-2-B7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-miSetima-E7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
-                    <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> C </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-C7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-C7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
-                    <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> C </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-miSetima-E7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-laMenor-Am"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-C7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
-                    <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> C </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-C7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-C7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-<!--! PAUSA -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
-                    <div class="card-letraMusica">
-                        <p> BLOCO </p>
-                        <p> C </p>
-                    </div>
-                </div>
-            </div>
-<!--! PAUSA -->
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faSetima-F7"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-siBemol-Bb"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-siBemolMenor-Bbm"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
-            <div class="card-container">
-                <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
-                    <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Trecho 23 -->
             <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-reSetima-D7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
+                        <p> </p>
+                        <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <!-- Trecho 23 -->
             <div class="card-container">
                 <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-solMenor-Gm"></div>
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
+                        <p>  </p>
+                        <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <!-- Trecho 23 -->
             <div class="card-container">
                 <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-doSetima-2-C7"></div>
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
+                        <p>  </p>
+                        <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro"></div>
-            <!-- Trecho 23 -->
             <div class="card-container">
                 <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="acorde-faMaior-F"></div>
+                    <div class="card-acorde" data-acorde="acorde-laSetima-A7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
+                        <p>  </p>
+                        <p> <br> </p>
                     </div>
                 </div>
             </div>
-            <div class="area-divisadeiro"></div>
-            <div class="area-divisadeiro"></div>
-<!--! Teste De Posição de DEDOS com Template Completo -->
-            <!-- <div class="card-container">
+            <div class="card-container">
                 <div class="partituras-card">
-                    <div class="card-acorde" data-acorde="001-acorde-templateCompleto"></div>
+                    <div class="card-acorde" data-acorde="acorde-reSetima-D7"></div>
                     <div class="card-letraMusica">
-                        <p></p>
-                        <p></p>
+                        <p> </p>
+                        <p> <br> </p>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+<!--! PAUSA -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-A-intervalo"></div>
+                    <div class="card-letraMusica">
+                        <p> - </p>
+                        <p> - </p>
+                    </div>
+                </div>
+            </div>
+<!--! PAUSA -->
+            <!--? ESTROFE -->
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-laSetima-A7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-laSetima-A7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-laSetima-A7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-doMaior-C"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-laSetima-A7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-reMenor-Dm"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="partituras-card">
+                    <div class="card-acorde" data-acorde="acorde-solSetima-G7"></div>
+                    <div class="card-letraMusica">
+                        <p>  </p>
+                        <p> <br> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ESTROFE -->
 <!--! FIM PAREI-->
             <!-- Adicione mais trechos conforme necessário -->
             <!--? Trecho 000 FIM -->
-            <!-- <div class="card-container">
+            <div class="card-container">
                 <div class="partituras-card">
                     <div class="card-acorde" data-acorde="acorde-Z-fim"></div>
                     <div class="card-letraMusica">
@@ -801,9 +592,9 @@
                         <p> <br> </p>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
-<!-- FIM CONTAINER MUSICAL ACORDES -->
+        <!-- FIM CONTAINER MUSICAL ACORDES -->
     </div>
 <!-- =================================================== -->
     <script src="../../static/js/partituras-botao-ativo.js"></script>

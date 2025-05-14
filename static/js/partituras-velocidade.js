@@ -4,7 +4,7 @@
 // Função para alterar a velocidade
 
 //! Código começou a funcionar mas está com problemas de sincronia com cards, fala e marcação de cores 19/3 17:48h
-// ? Está corrigido fala e velocidade
+// ? Está corrigido fala e velocidade ok
 
 
 // Função para alterar a velocidade do carrossel e fala
@@ -53,13 +53,13 @@ function ajustarIntervalo() {
 
 // Botões de velocidade:
 document.getElementById('partituras-velocidade-devagar').addEventListener('click', function() {
-  alterarVelocidade(100, 0.7); 
+  alterarVelocidade(150, 0.4); 
   ajustarIntervalo();
   marcarBotaoAtivo(this, 'grupo-velocidade');
 });
 
 document.getElementById('partituras-velocidade-medio').addEventListener('click', function() {
-alterarVelocidade(90, 1);
+alterarVelocidade(110, 0.8);
 ajustarIntervalo();
 marcarBotaoAtivo(this, 'grupo-velocidade');
 });
