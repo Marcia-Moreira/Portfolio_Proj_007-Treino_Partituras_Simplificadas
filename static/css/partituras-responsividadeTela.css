@@ -1,54 +1,30 @@
 
 /* RESPONSIVIDADE DE TODAS AS TELAS: */
 
-/* Para telas menores, ajuste a largura dos cards */
-@media (max-width: 768px) {
-    .card-container {
-        /* flex: 0 0 50%; */
-        /* Cada card ocupa metade da tela */
-        flex: 0 0 33.33%;
-    }
-    #area-central {
-        position: absolute;
-        left: 50%;
-        top: 44%;
-        transform: translate(-50%, -50%);
-        width: 180px;
-        height: 330px;
-        /* height: calc(500px - top 200px); */
-        /* background: rgba(21, 132, 80, 0.5); */
-        bottom: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .card-container {
-        flex: 0 0 50%; /* 2 cards por linha */
-        
-    }
+@media (max-width: 916px) {
+    /* Ajuste do tamanho dos botões */
     .partituras-controles button {
-    /*! REVER */
-        gap: 3px;
-        max-width: 40px;
-        max-height: 40px;
+        gap: 4px; /* Espaço entre Ícone e Texto */
+        padding: 4px;
+        /* Altera tamanho da Fonte e do Emoji: */
+        font-size: 16px;
+        min-width: 60px;
+        min-height: 14px;
+        margin-bottom: 4px;
+        /* background-color: #6e9169; */
+        background-color: #a1c79b;
+        border: 1px solid #6e9169;
+        border-radius: 5px;
     }
-    /* Ocultar o texto em telas pequenas (somente emojis) */
     .partituras-controles button span {
+        /* Diminui o tamanho apenas da fonte: */
         display: none;
-        /*! REVER: */
-        transition: 1s ease-in-out;
+        /* font-size: 10px; */
+        /* font-weight: 600; */
+        /* letter-spacing: 1.5px; */
+        transition: opacity 0.3s ease;
     }
-    #area-central {
-        position: absolute;
-        left: 50%;
-        top: 44%;
-        transform: translate(-50%, -50%);
-        width: 180px;
-        height: 330px;
-        /* height: calc(500px - top 200px); */
-        /* background: rgba(21, 132, 80, 0.5); */
-        bottom: 0;
-    }
+
 }
 
 /*? Note 20 Plus Tela Horizontal: */
@@ -95,24 +71,6 @@
         gap: 8px;
         max-width: 95vw;
     }
-    /* Ajuste do tamanho dos botões */
-    .partituras-controles button {
-        gap: 4px; /* Espaço entre Ícone e Texto */
-        padding: 4px;
-        /* Altera tamanho da Fonte e do Emoji: */
-        font-size: 16px;
-        min-width: 60px;
-        min-height: 14px;
-        margin-bottom: 4px;
-    }
-    .partituras-controles button span {
-        /* Diminui o tamanho apenas da fonte: */
-        display: none;
-        /* font-size: 10px; */
-        /* font-weight: 600; */
-        /* letter-spacing: 1.5px; */
-        transition: opacity 0.3s ease;
-    }
     .partituras-carrossel {
         gap: 10px;
         padding: 8px;
@@ -147,6 +105,64 @@
     /* ************************************** */
 
         
+}
+
+/* Para telas menores, ajuste a largura dos cards */
+@media (max-width: 768px) {
+    .card-container {
+        /* flex: 0 0 50%; */
+        /* Cada card ocupa metade da tela */
+        flex: 0 0 33.33%;
+    }
+    #area-central {
+        position: absolute;
+        left: 50%;
+        top: 44%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: 330px;
+        /* height: calc(500px - top 200px); */
+        /* background: rgba(21, 132, 80, 0.5); */
+        bottom: 0;
+    }
+}
+
+/* Estilos para telas pequenas (celular) */
+@media (max-width: 767px) {
+    #faixa-central {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex: 0 0 50%; /* 2 cards por linha */
+        
+    }
+    .partituras-controles button {
+    /*! REVER */
+        gap: 3px;
+        max-width: 40px;
+        max-height: 40px;
+    }
+    /* Ocultar o texto em telas pequenas (somente emojis) */
+    .partituras-controles button span {
+        display: none;
+        /*! REVER: */
+        transition: 1s ease-in-out;
+    }
+    #area-central {
+        position: absolute;
+        left: 50%;
+        top: 44%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: 330px;
+        /* height: calc(500px - top 200px); */
+        /* background: rgba(21, 132, 80, 0.5); */
+        bottom: 0;
+    }
 }
 
 /*? Note 20 Plus Tela Vertical: */
@@ -202,6 +218,8 @@
         min-width: 70px;
         min-height: 14px;
         margin-bottom: 4px;
+
+        /*! Tem uma falha em uma faixa pequena de cores do botaõ  */
     }
     .partituras-controles button span {
         /* Diminui o tamanho apenas da fonte: */
@@ -241,16 +259,9 @@
     }
 }
 
-    /* Estilos para telas pequenas (celular) */
-    @media (max-width: 767px) {
-        #faixa-central {
-            width: 50px;
-            height: 50px;
-        }
-    }
-    /* ************************************** */
-    /* ************************************** */
-    /* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
 
     
 
