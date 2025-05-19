@@ -29,8 +29,9 @@
 <script>
     function gerarFolhaImpressao() {
         // Coleta todos os elementos necessários
-        const cards = Array.from(document.querySelectorAll('.card-container'))
-            .filter(card => !card.querySelector('[data-acorde$="intervalo"]')); // Filtra pausas
+        const cards = Array.from(document.querySelectorAll('.card-container'));
+            // .filter(card => !card.querySelector('[data-acorde$="intervalo"]')); 
+            // Filtra pausas
         
         const levadaHTML = document.querySelector('.levadas-graficos-batidas').innerHTML;
         const tituloHTML = document.querySelector('.partituras-titulo').innerHTML;
@@ -157,7 +158,7 @@
 <!-- =================================================== -->
         <div class="partituras-titulo">
             <h2> Sonho Meu - Dona Ivone Lara </h2>
-            <h3> Tonalidade: Dó Maior / C+ </h3>
+            <h3> Tonalidade: Dó Maior / C+ (Prof. Carlinhos)</h3>
         </div>
 <!-- =================================================== -->
         <div class="partituras-controles">
@@ -171,7 +172,7 @@
             <button id="partituras-som" onclick="alternarSom()">🔊 <span>Som</span></button>
             <button onclick="fecharJanela()"> ❌ <span>Fechar</span> </button>
             <button onclick="maximizar()"> ⛶ <span>Maximizar</span> </button>
-            <button onclick="gerarFolhaImpressao()"> 📄 <span>Folha para Impressão</span> </button>
+            <button onclick="gerarFolhaImpressao()"> 📄 <span>Imprimir</span> </button>
         </div>
 <!-- =================================================== -->
         <!-- INÍCIO CONTAINER GRÁFICO DE LEVADAS/BATIDAS -->

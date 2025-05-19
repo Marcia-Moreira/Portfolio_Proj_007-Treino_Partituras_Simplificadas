@@ -71,7 +71,7 @@ marcarBotaoAtivo(this, 'grupo-velocidade');
 });
 
 document.getElementById('partituras-velocidade-superRapido').addEventListener('click', function() {
-alterarVelocidade(60, 2);
+alterarVelocidade(50, 3.0);
 ajustarIntervalo();
 marcarBotaoAtivo(this, 'grupo-velocidade');
 });
